@@ -1,0 +1,4 @@
+[Project]
+Name=floodit
+Manager=KDevCMakeManager
+VersionControl=kdevgit
