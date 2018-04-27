@@ -1,6 +1,14 @@
 #include <iostream>
+#include "core/flooditboard.h"
+
+using namespace std;
 
 int main(int argc, char **argv) {
-    std::cout << "Hello, world!" << std::endl;
+	
+	FlooditBoard flooditBoard;
+	
+	flooditBoard.loadDefaultInstance();
+	flooditBoard.print();
+	
     return 0;
 }

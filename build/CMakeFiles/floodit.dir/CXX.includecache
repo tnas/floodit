@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thiago/projects/floodit/core/flooditboard.cpp
+flooditboard.h
+/home/thiago/projects/floodit/core/flooditboard.h
+iostream
+-
+fstream
+-
+cstdlib
+-
+
+/home/thiago/projects/floodit/core/flooditboard.h
+string
+-
+
+/home/thiago/projects/floodit/main.cpp
+iostream
+-
+core/flooditboard.h
+/home/thiago/projects/floodit/core/flooditboard.h
+
