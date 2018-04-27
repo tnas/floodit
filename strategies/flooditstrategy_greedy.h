@@ -15,17 +15,17 @@
  * 
  */
 
-#ifndef FLOODITSTRATEGY_H
-#define FLOODITSTRATEGY_H
+#ifndef FLOODITSTRATEGY__GREEDY_H
+#define FLOODITSTRATEGY_GREEDY_H
 
-#include "../core/floodit.h"
+#include "flooditstrategy.h"
 
-class FlooditStrategy
+class GreedyFlooditStrategy : public FlooditStrategy
 {
 	
-public:
+public :
 	
 	color_t  getPaintingColor(const board_t board, const unsigned int rows, const unsigned int cols, const unsigned int ncolors);
 };
 
-#endif // FLOODITSTRATEGY_H
+#endif // FLOODITSTRATEGY_GREEDY_H

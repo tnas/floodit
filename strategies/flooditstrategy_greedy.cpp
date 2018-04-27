@@ -15,22 +15,10 @@
  * 
  */
 
-#include "flooditstrategy.h"
+#include "flooditstrategy_greedy.h"
 #include <string.h>
 
-
-FlooditStrategy::FlooditStrategy()
-{
-
-}
-
-FlooditStrategy::~FlooditStrategy()
-{
-
-}
-
-
-color_t  FlooditStrategy::getPaintingColor(const board_t board, const unsigned int rows, const unsigned int cols, const unsigned int ncolors)
+color_t FlooditStrategy::getPaintingColor(const board_t board, const unsigned int rows, const unsigned int cols, const unsigned int ncolors)
 {
 	unsigned int colorsFrequency[ncolors];
 	color_t paintingColor, leftUpperColor;

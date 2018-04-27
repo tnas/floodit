@@ -35,14 +35,20 @@ core/flooditboard.h
 /home/thiago/projects/floodit/core/flooditboard.h
 strategies/flooditstrategy.h
 /home/thiago/projects/floodit/strategies/flooditstrategy.h
+strategies/flooditstrategy_greedy.h
+/home/thiago/projects/floodit/strategies/flooditstrategy_greedy.h
 
 /home/thiago/projects/floodit/strategies/flooditstrategy.h
 ../core/floodit.h
 /home/thiago/projects/floodit/core/floodit.h
 
 /home/thiago/projects/floodit/strategies/flooditstrategy_greedy.cpp
-flooditstrategy.h
-/home/thiago/projects/floodit/strategies/flooditstrategy.h
+flooditstrategy_greedy.h
+/home/thiago/projects/floodit/strategies/flooditstrategy_greedy.h
 string.h
 -
+
+/home/thiago/projects/floodit/strategies/flooditstrategy_greedy.h
+flooditstrategy.h
+/home/thiago/projects/floodit/strategies/flooditstrategy.h
 
