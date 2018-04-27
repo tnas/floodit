@@ -78,17 +78,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -111,6 +100,17 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thiago/projects/floodit/build/CMakeFiles /home/thiago/projects/floodit/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/thiago/projects/floodit/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/thiago/projects/floodit/build/CMakeFiles /home/thiago/projects/floodit/build/strategies/CMakeFiles/progress.marks
+	cd /home/thiago/projects/floodit/build && $(MAKE) -f CMakeFiles/Makefile2 strategies/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thiago/projects/floodit/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/thiago/projects/floodit/build && $(MAKE) -f CMakeFiles/Makefile2 strategies/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,112 +141,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/thiago/projects/floodit/build && $(MAKE) -f CMakeFiles/Makefile2 strategies/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/thiago/projects/floodit/build && $(MAKE) -f CMakeFiles/Makefile2 strategies/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/thiago/projects/floodit/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named floodit
-
-# Build rule for target.
-floodit: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 floodit
-.PHONY : floodit
-
-# fast build rule for target.
-floodit/fast:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/build
-.PHONY : floodit/fast
-
-core/flooditboard.o: core/flooditboard.cpp.o
-
-.PHONY : core/flooditboard.o
-
-# target to build an object file
-core/flooditboard.cpp.o:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/core/flooditboard.cpp.o
-.PHONY : core/flooditboard.cpp.o
-
-core/flooditboard.i: core/flooditboard.cpp.i
-
-.PHONY : core/flooditboard.i
-
-# target to preprocess a source file
-core/flooditboard.cpp.i:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/core/flooditboard.cpp.i
-.PHONY : core/flooditboard.cpp.i
-
-core/flooditboard.s: core/flooditboard.cpp.s
-
-.PHONY : core/flooditboard.s
-
-# target to generate assembly for a file
-core/flooditboard.cpp.s:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/core/flooditboard.cpp.s
-.PHONY : core/flooditboard.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-strategies/flooditstrategy_greedy.o: strategies/flooditstrategy_greedy.cpp.o
-
-.PHONY : strategies/flooditstrategy_greedy.o
-
-# target to build an object file
-strategies/flooditstrategy_greedy.cpp.o:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o
-.PHONY : strategies/flooditstrategy_greedy.cpp.o
-
-strategies/flooditstrategy_greedy.i: strategies/flooditstrategy_greedy.cpp.i
-
-.PHONY : strategies/flooditstrategy_greedy.i
-
-# target to preprocess a source file
-strategies/flooditstrategy_greedy.cpp.i:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.i
-.PHONY : strategies/flooditstrategy_greedy.cpp.i
-
-strategies/flooditstrategy_greedy.s: strategies/flooditstrategy_greedy.cpp.s
-
-.PHONY : strategies/flooditstrategy_greedy.s
-
-# target to generate assembly for a file
-strategies/flooditstrategy_greedy.cpp.s:
-	$(MAKE) -f CMakeFiles/floodit.dir/build.make CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.s
-.PHONY : strategies/flooditstrategy_greedy.cpp.s
 
 # Help Target
 help:
@@ -256,20 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... floodit"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... core/flooditboard.o"
-	@echo "... core/flooditboard.i"
-	@echo "... core/flooditboard.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... strategies/flooditstrategy_greedy.o"
-	@echo "... strategies/flooditstrategy_greedy.i"
-	@echo "... strategies/flooditstrategy_greedy.s"
 .PHONY : help
 
 
@@ -281,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/thiago/projects/floodit/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

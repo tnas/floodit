@@ -23,3 +23,9 @@
 /home/thiago/projects/floodit/build/instances/CMakeFiles/install/local.dir
 /home/thiago/projects/floodit/build/instances/CMakeFiles/rebuild_cache.dir
 /home/thiago/projects/floodit/build/instances/CMakeFiles/edit_cache.dir
+/home/thiago/projects/floodit/build/strategies/CMakeFiles/install.dir
+/home/thiago/projects/floodit/build/strategies/CMakeFiles/list_install_components.dir
+/home/thiago/projects/floodit/build/strategies/CMakeFiles/install/strip.dir
+/home/thiago/projects/floodit/build/strategies/CMakeFiles/install/local.dir
+/home/thiago/projects/floodit/build/strategies/CMakeFiles/rebuild_cache.dir
+/home/thiago/projects/floodit/build/strategies/CMakeFiles/edit_cache.dir

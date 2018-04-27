@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/thiago/projects/floodit/core/flooditboard.cpp" "/home/thiago/projects/floodit/build/CMakeFiles/floodit.dir/core/flooditboard.cpp.o"
   "/home/thiago/projects/floodit/main.cpp" "/home/thiago/projects/floodit/build/CMakeFiles/floodit.dir/main.cpp.o"
+  "/home/thiago/projects/floodit/strategies/flooditstrategy_greedy.cpp" "/home/thiago/projects/floodit/build/CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

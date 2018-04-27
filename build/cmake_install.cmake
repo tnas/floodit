@@ -53,6 +53,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/thiago/projects/floodit/build/util/cmake_install.cmake")
   include("/home/thiago/projects/floodit/build/core/cmake_install.cmake")
   include("/home/thiago/projects/floodit/build/instances/cmake_install.cmake")
+  include("/home/thiago/projects/floodit/build/strategies/cmake_install.cmake")
 
 endif()
 

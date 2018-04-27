@@ -3,10 +3,12 @@ project(floodit)
 
 add_executable(floodit 
 		main.cpp
-		core/flooditboard.cpp)
+		core/flooditboard.cpp
+		strategies/flooditstrategy_greedy.cpp)
 
 install(TARGETS floodit RUNTIME DESTINATION bin)
 
 add_subdirectory(util)
 add_subdirectory(core)
 add_subdirectory(instances)
+add_subdirectory(strategies)

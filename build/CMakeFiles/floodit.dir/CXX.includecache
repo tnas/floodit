@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/thiago/projects/floodit/core/floodit.h
+list
+-
+
 /home/thiago/projects/floodit/core/flooditboard.cpp
 flooditboard.h
 /home/thiago/projects/floodit/core/flooditboard.h
@@ -17,6 +21,10 @@ cstdlib
 -
 
 /home/thiago/projects/floodit/core/flooditboard.h
+floodit.h
+/home/thiago/projects/floodit/core/floodit.h
+../strategies/flooditstrategy.h
+/home/thiago/projects/floodit/strategies/flooditstrategy.h
 string
 -
 
@@ -25,4 +33,16 @@ iostream
 -
 core/flooditboard.h
 /home/thiago/projects/floodit/core/flooditboard.h
+strategies/flooditstrategy.h
+/home/thiago/projects/floodit/strategies/flooditstrategy.h
+
+/home/thiago/projects/floodit/strategies/flooditstrategy.h
+../core/floodit.h
+/home/thiago/projects/floodit/core/floodit.h
+
+/home/thiago/projects/floodit/strategies/flooditstrategy_greedy.cpp
+flooditstrategy.h
+/home/thiago/projects/floodit/strategies/flooditstrategy.h
+string.h
+-
 

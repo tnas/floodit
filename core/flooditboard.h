@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 <copyright holder> <email>
+ * Copyright 2018 <Thiago Nascimento> <nascimenthiago@gmail.com>
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,9 +18,10 @@
 #ifndef FLOODITBOARD_H
 #define FLOODITBOARD_H
 
+#include "floodit.h"
+#include "../strategies/flooditstrategy.h"
 #include <string>
 
-using namespace std;
 
 class FlooditBoard
 {
@@ -30,7 +31,8 @@ class FlooditBoard
 	unsigned int rows_;
 	unsigned int cols_;
 	unsigned int colors_;
-	unsigned int** board_;
+	board_t board_;
+	color_roadmap_t roadmap;
 	
 public :
 		
@@ -38,9 +40,12 @@ public :
 	~FlooditBoard();
 	void loadDefaultInstance();
 	void loadInstance(const string instancePath);
-	void print();
-	
-    
+	void printInstance();
+	void solveInstance(FlooditStrategy strategy);
+	bool isInstanceSolved();
+	void applyColor(color_t color);
+	void applyColorRoadmap(color_roadmap_t roadmap);
+	void printSolution();
 };
 
 #endif // FLOODITBOARD_H

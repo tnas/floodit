@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/floodit.dir/main.cpp.o"
   "CMakeFiles/floodit.dir/core/flooditboard.cpp.o"
+  "CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o"
   "floodit.pdb"
   "floodit"
 )

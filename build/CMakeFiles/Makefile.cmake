@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
   "../core/CMakeLists.txt"
   "../instances/CMakeLists.txt"
+  "../strategies/CMakeLists.txt"
   "../util/CMakeLists.txt"
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
@@ -43,6 +44,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "util/CMakeFiles/CMakeDirectoryInformation.cmake"
   "core/CMakeFiles/CMakeDirectoryInformation.cmake"
   "instances/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "strategies/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
