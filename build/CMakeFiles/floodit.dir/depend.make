@@ -4,16 +4,16 @@
 CMakeFiles/floodit.dir/core/flooditboard.cpp.o: ../core/floodit.h
 CMakeFiles/floodit.dir/core/flooditboard.cpp.o: ../core/flooditboard.cpp
 CMakeFiles/floodit.dir/core/flooditboard.cpp.o: ../core/flooditboard.h
-CMakeFiles/floodit.dir/core/flooditboard.cpp.o: ../strategies/flooditstrategy.h
+CMakeFiles/floodit.dir/core/flooditboard.cpp.o: ../core/flooditstrategy.h
 
 CMakeFiles/floodit.dir/main.cpp.o: ../core/floodit.h
 CMakeFiles/floodit.dir/main.cpp.o: ../core/flooditboard.h
+CMakeFiles/floodit.dir/main.cpp.o: ../core/flooditstrategy.h
 CMakeFiles/floodit.dir/main.cpp.o: ../main.cpp
-CMakeFiles/floodit.dir/main.cpp.o: ../strategies/flooditstrategy.h
 CMakeFiles/floodit.dir/main.cpp.o: ../strategies/flooditstrategy_greedy.h
 
 CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o: ../core/floodit.h
-CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o: ../strategies/flooditstrategy.h
+CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o: ../core/flooditstrategy.h
 CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o: ../strategies/flooditstrategy_greedy.cpp
 CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o: ../strategies/flooditstrategy_greedy.h
 

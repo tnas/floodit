@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/floodit.dir/main.cpp.o CMakeFiles/floodit.dir/core/flooditboard.cpp.o CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o  -o floodit -rdynamic 
+/usr/bin/c++    -fopenmp -g    CMakeFiles/floodit.dir/main.cpp.o CMakeFiles/floodit.dir/core/flooditboard.cpp.o CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o  -o floodit -rdynamic 

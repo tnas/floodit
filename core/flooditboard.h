@@ -19,7 +19,7 @@
 #define FLOODITBOARD_H
 
 #include "floodit.h"
-#include "../strategies/flooditstrategy.h"
+#include "flooditstrategy.h"
 #include <string>
 
 
@@ -33,6 +33,7 @@ class FlooditBoard
 	unsigned int colors_;
 	board_t board_;
 	color_roadmap_t roadmap;
+	double solutionTime_;
 	
 public :
 		
@@ -41,11 +42,12 @@ public :
 	void loadDefaultInstance();
 	void loadInstance(const string instancePath);
 	void printInstance();
-	void solveInstance(FlooditStrategy strategy);
+	void solveInstance(FlooditStrategy* strategy);
 	bool isInstanceSolved();
 	void applyColor(color_t color);
 	void applyColorRoadmap(color_roadmap_t roadmap);
 	void printSolution();
+	double getSolutionTime();
 };
 
 #endif // FLOODITBOARD_H

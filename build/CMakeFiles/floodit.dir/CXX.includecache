@@ -19,28 +19,36 @@ fstream
 -
 cstdlib
 -
+omp.h
+-
 
 /home/thiago/projects/floodit/core/flooditboard.h
 floodit.h
 /home/thiago/projects/floodit/core/floodit.h
-../strategies/flooditstrategy.h
-/home/thiago/projects/floodit/strategies/flooditstrategy.h
+flooditstrategy.h
+/home/thiago/projects/floodit/core/flooditstrategy.h
 string
 -
+
+/home/thiago/projects/floodit/core/flooditstrategy.h
+../core/floodit.h
+/home/thiago/projects/floodit/core/floodit.h
 
 /home/thiago/projects/floodit/main.cpp
 iostream
 -
+unistd.h
+-
+stdlib.h
+-
+stdio.h
+-
 core/flooditboard.h
 /home/thiago/projects/floodit/core/flooditboard.h
-strategies/flooditstrategy.h
-/home/thiago/projects/floodit/strategies/flooditstrategy.h
+core/flooditstrategy.h
+/home/thiago/projects/floodit/core/flooditstrategy.h
 strategies/flooditstrategy_greedy.h
 /home/thiago/projects/floodit/strategies/flooditstrategy_greedy.h
-
-/home/thiago/projects/floodit/strategies/flooditstrategy.h
-../core/floodit.h
-/home/thiago/projects/floodit/core/floodit.h
 
 /home/thiago/projects/floodit/strategies/flooditstrategy_greedy.cpp
 flooditstrategy_greedy.h
@@ -49,6 +57,6 @@ string.h
 -
 
 /home/thiago/projects/floodit/strategies/flooditstrategy_greedy.h
-flooditstrategy.h
-/home/thiago/projects/floodit/strategies/flooditstrategy.h
+../core/flooditstrategy.h
+/home/thiago/projects/floodit/core/flooditstrategy.h
 

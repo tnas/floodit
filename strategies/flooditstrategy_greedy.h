@@ -18,7 +18,7 @@
 #ifndef FLOODITSTRATEGY__GREEDY_H
 #define FLOODITSTRATEGY_GREEDY_H
 
-#include "flooditstrategy.h"
+#include "../core/flooditstrategy.h"
 
 class GreedyFlooditStrategy : public FlooditStrategy
 {

@@ -19,7 +19,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
-
+#include <omp.h>
 
 const string FlooditBoard::PATH_DEFAULT_INSTANCE = "../instances/exemplo_site_fabiano.txt";
 
@@ -70,7 +70,8 @@ void FlooditBoard::loadInstance(const string instancePath)
 	}
 	else
 	{
-		cerr << "Failure to open " << this->instance_ << endl;
+		cerr << "*** Failure to open " << this->instance_ 
+		     << " ***" << endl;
 		exit(EXIT_FAILURE);
 	}
 	
@@ -98,16 +99,28 @@ void FlooditBoard::printInstance()
 }
 
 
-void FlooditBoard::solveInstance(FlooditStrategy strategy)
+void FlooditBoard::solveInstance(FlooditStrategy* strategy)
 {
 	color_t paintingColor;
-
+	double init_time;
+	
+	if (strategy == NULL)
+	{
+		cerr << "*** Failure: There is no strategy to solve instance" 
+		     << " ***" << endl;
+		exit(EXIT_FAILURE);
+	}
+	
+	init_time = omp_get_wtime();
+	
 	while (!this->isInstanceSolved())
 	{
-		paintingColor = strategy.getPaintingColor(this->board_, this->rows_, this->cols_, this->colors_);
+		paintingColor = strategy->getPaintingColor(this->board_, this->rows_, this->cols_, this->colors_);
 		this->roadmap.push_back(paintingColor);
 		this->applyColor(paintingColor);
 	}
+	
+	this->solutionTime_ = (omp_get_wtime() - init_time);
 }
 
 
@@ -174,4 +187,10 @@ void FlooditBoard::printSolution()
 	}
 	
 	cout << endl;
+}
+
+
+double FlooditBoard::getSolutionTime()
+{
+	return this->solutionTime_;
 }

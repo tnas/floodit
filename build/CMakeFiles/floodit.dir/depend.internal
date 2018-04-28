@@ -5,15 +5,15 @@ CMakeFiles/floodit.dir/core/flooditboard.cpp.o
  /home/thiago/projects/floodit/core/floodit.h
  /home/thiago/projects/floodit/core/flooditboard.cpp
  /home/thiago/projects/floodit/core/flooditboard.h
- /home/thiago/projects/floodit/strategies/flooditstrategy.h
+ /home/thiago/projects/floodit/core/flooditstrategy.h
 CMakeFiles/floodit.dir/main.cpp.o
  /home/thiago/projects/floodit/core/floodit.h
  /home/thiago/projects/floodit/core/flooditboard.h
+ /home/thiago/projects/floodit/core/flooditstrategy.h
  /home/thiago/projects/floodit/main.cpp
- /home/thiago/projects/floodit/strategies/flooditstrategy.h
  /home/thiago/projects/floodit/strategies/flooditstrategy_greedy.h
 CMakeFiles/floodit.dir/strategies/flooditstrategy_greedy.cpp.o
  /home/thiago/projects/floodit/core/floodit.h
- /home/thiago/projects/floodit/strategies/flooditstrategy.h
+ /home/thiago/projects/floodit/core/flooditstrategy.h
  /home/thiago/projects/floodit/strategies/flooditstrategy_greedy.cpp
  /home/thiago/projects/floodit/strategies/flooditstrategy_greedy.h
